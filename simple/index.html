@@ -10,6 +10,10 @@
 <body>
 	<div id="app" class="container">
 		{{ name }}
+		<div v-for="(array, index) in arrays" :key="index">
+			<div class="badge badge-primary">{{ index + ' ' + array.hello + ' ' + array.country }}</div>
+			<input v-model="array.hello">
+		</div>
 	</div>
 
 

@@ -1,14 +1,22 @@
 <template>
   <div id="app">
     <Nav/>
-    <div data-spy="scroll" data-target="#navbarTarget" data-offset="0">
-      <Carousel/>
-      <div id="VueLogo" class="bg-warning d-flex align-items-center justify-content-center" style="height: 60vh;">
-        <img alt="Vue logo" src="./assets/logo.png">
+
+    <main>
+      <div data-spy="scroll" data-target="#navbarTarget" data-offset="0">
+        <Carousel/>
+        <div
+          id="VueLogo"
+          class="bg-warning d-flex align-items-center justify-content-center"
+          style="height: 60vh;"
+        >
+          <img alt="Vue logo" src="./assets/logo.png">
+        </div>
+        <HelloWorld msg="Welcome to Your Vue.js App"/>
       </div>
-			<HelloWorld msg="Welcome to Your Vue.js App"/>
-    </div>
-    <br>
+    </main>
+
+    <Footer/>
   </div>
 </template>
 
@@ -16,13 +24,15 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Nav from "./components/Nav.vue";
 import Carousel from "./components/Carousel.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "app",
   components: {
     HelloWorld,
     Nav,
-    Carousel
+    Carousel,
+    Footer
   }
 };
 </script>

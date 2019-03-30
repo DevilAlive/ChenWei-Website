@@ -1,5 +1,5 @@
 <template>
-  <nav id="navbarTarget" class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+  <nav id="navbarTarget" class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
     <div class="container">
       <a href="#" class="navbar-brand">SmallMO</a>
       <button
@@ -16,8 +16,8 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav justify-content-between">
-          <li class="nav-item" :key="navName.name" v-for="navName in navNames">
-            <a :href="'#'+navName.name" class="nav-link">{{ navName.name }}</a>
+          <li class="nav-item" v-for="navName in navNames" :key="navName.id">
+            <a :href="`#${navName.id}`" class="nav-link">{{ navName.name }}</a>
           </li>
         </ul>
       </div>
@@ -27,10 +27,17 @@
 
 <script>
 export default {
-  name: 'Nav',
+  id: "Nav",
   data: () => {
     return {
-      navNames: [{ name: "Carousel" }, { name: "VueLogo" }, { name: "helloWorld1" }, { name: "helloWorld2" }, { name: "helloWorld3" }, { name: "helloWorld4" }]
+      navNames: [
+        { id: "Carousel", name: "活動" },
+        { id: "VueLogo", name: "關於我" },
+        { id: "helloWorld1", name: "項目1" },
+        { id: "helloWorld2", name: "項目2" },
+        { id: "helloWorld3", name: "項目3" },
+        { id: "helloWorld4", name: "項目4" }
+      ]
     };
   }
 };
