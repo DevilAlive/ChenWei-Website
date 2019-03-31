@@ -1,0 +1,11 @@
+.v-leave-active,
+.v-enter-active {
+	transition: all 1s;
+}
+
+.v-enter,
+.v-leave-to {
+	opacity: 0;
+	font-size: 1 rem;
+	transform: translateY(100px);
+}

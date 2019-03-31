@@ -5,14 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>SmallMO's House</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 	<div id="app" class="container">
-		{{ name }}
-		<div v-for="(array, index) in arrays" :key="index">
-			<div class="badge badge-primary">{{ index + ' ' + array.hello + ' ' + array.country }}</div>
-			<input v-model="array.hello">
+		<div class="d-flex row justify-content-center">
+			<span class="col-12 my-2 badge badge-pill badge-dark text-light" style="font-size: 1.5rem">{{ name }}</span>
+			<div v-for="(array, index) in arrays" :key="index" class="col-6">
+				<div class="col-auto">{{ index + ' ' + array.hello + ' ' + array.country }}</div>
+				<input class="form-control mb-2" v-model="array.hello">
+			</div>
+			<button class="form-control bg-outline-dark" @click="show = !show">Toggle</button>
+			<transition appear>
+				<span style="font-size: 2rem;" v-if="show">Hello World!</span>
+			</transition>
 		</div>
 	</div>
 
