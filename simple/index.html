@@ -15,12 +15,17 @@
 		<div class="d-flex row justify-content-center">
 			<span class="col-12 my-2 badge badge-pill badge-dark text-light" style="font-size: 1.5rem">{{ name }}</span>
 			<div v-for="(array, index) in arrays" :key="index" class="col-6">
-				<div class="col-auto">{{ index + ' ' + array.hello + ' ' + array.country }}</div>
-				<input class="form-control mb-2" v-model="array.hello">
+				<div class="row p-2">
+					<div class="col-12 colorWord text-nowrap text-truncate">
+						{{ index + ' ' + array.hello + ' ' + array.country }}
+					</div>
+					<input class="col-6 form-control" v-model="array.hello">
+					<input class="col-6 form-control" v-model="array.country">
+				</div>
 			</div>
 			<button class="form-control bg-outline-dark" @click="show = !show">Toggle</button>
 			<transition appear>
-				<span style="font-size: 2rem;" v-if="show">Hello World!</span>
+				<span class="colorWord" style="font-size: 2rem;" v-if="show">Hello World!</span>
 			</transition>
 		</div>
 	</div>

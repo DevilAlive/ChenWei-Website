@@ -9,3 +9,10 @@
 	font-size: 1 rem;
 	transform: translateY(100px);
 }
+
+.colorWord {
+	font-size: 4rem;
+	background: -webkit-linear-gradient(top left, #77bbff 0, #2222ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
