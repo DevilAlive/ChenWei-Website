@@ -32,8 +32,8 @@ export default {
     return {
       navNames: [
         { id: "Carousel", name: "活動" },
-        { id: "VueLogo", name: "關於我" },
-        { id: "helloWorld1", name: "項目1" },
+        { id: "About", name: "關於我" },
+        { id: "Subject", name: "項目1" },
         { id: "helloWorld2", name: "項目2" },
         { id: "helloWorld3", name: "項目3" },
         { id: "helloWorld4", name: "項目4" }
