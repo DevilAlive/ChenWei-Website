@@ -6,7 +6,7 @@
       <div data-spy="scroll" data-target="#navbarTarget" data-offset="0">
         <Carousel/>
         <About id="About"/>
-				<Subject id="Subject"/>
+        <Subject id="Subject"/>
         <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
       </div>
     </main>
@@ -27,8 +27,8 @@ export default {
   components: {
     Nav,
     Carousel,
-		About,
-		Subject,
+    About,
+    Subject,
     Footer
   }
 };
@@ -55,10 +55,13 @@ img {
 span,
 p {
   color: white;
-	text-shadow: 1rem 1rem 1.1rem #333333;
+  text-shadow: 1rem 1rem 1.1rem #333333;
 }
-button{
-	text-shadow: 1rem 1rem 1.1rem #333333;
+button {
+  text-shadow: 1rem 1rem 1.1rem #333333;
+}
+.smooth {
+  transition: all 1s;
 }
 .blockHeight {
   height: 60vh;
