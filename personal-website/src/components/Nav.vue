@@ -28,16 +28,17 @@
 <script>
 export default {
   id: "Nav",
+  props: ['navNames'],
   data: () => {
     return {
-      navNames: [
-        { id: "Carousel", name: "活動" },
-        { id: "About", name: "關於我" },
-        { id: "Subject", name: "項目1" },
-        { id: "helloWorld2", name: "項目2" },
-        { id: "helloWorld3", name: "項目3" },
-        { id: "helloWorld4", name: "項目4" }
-      ]
+      // navNames: [
+      //   { id: "Carousel", name: "活動" },
+      //   { id: "About", name: "關於我" },
+      //   { id: "Subject1", name: "項目1" },
+      //   { id: "Subject2", name: "項目2" },
+      //   { id: "Subject3", name: "項目3" },
+      //   { id: "Subject4", name: "項目4" }
+      // ]
     };
   }
 };
