@@ -1,16 +1,8 @@
 <template>
   <nav id="navbarTarget" class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
     <div class="container">
-      <a href="#" class="navbar-brand">SmallMO</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <a href="#" class="navbar-brand">ChenWei-MO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -30,16 +22,8 @@ export default {
   id: "Nav",
   props: ['navNames'],
   data: () => {
-    return {
-      // navNames: [
-      //   { id: "Carousel", name: "活動" },
-      //   { id: "About", name: "關於我" },
-      //   { id: "Subject1", name: "項目1" },
-      //   { id: "Subject2", name: "項目2" },
-      //   { id: "Subject3", name: "項目3" },
-      //   { id: "Subject4", name: "項目4" }
-      // ]
-    };
+    return {}
+      // navNames: [{ id: "Carousel", name: "活動" }, { id: "About", name: "關於我" }, { id: "Subject1", name: "項目1" }]
   }
 };
 </script>
