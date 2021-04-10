@@ -90,12 +90,12 @@ export default {
 
 
 <style>
-@font-face {
-  font-family: "Noto Sans CJK TC";
-  src: url("./assets/font/NotoSansCJKtc-Regular.otf") format("opentype");
+body {
+  font-size: 16px;
 }
 #app {
   /* font-family: "Avenir", Helvetica, Arial, sans-serif; */
+  font-size: 0.8rem;
   font-family: "Noto Sans CJK TC";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -104,21 +104,18 @@ export default {
   /* margin-top: 60px; */
 }
 img {
-  filter: drop-shadow(1rem 1rem 1.1rem #333333);
+  filter: drop-shadow(0.5rem 0.5rem 1.1rem #333333);
 }
-span,
-p {
+span, p {
   color: white;
-  text-shadow: 1rem 1rem 1.1rem #333333;
+  margin: 0rem;
+  text-shadow: 0.5rem 0.5rem 1.1rem #333333;
 }
 button {
-  text-shadow: 1rem 1rem 1.1rem #333333;
+  text-shadow: 0.5rem 0.5rem 1.1rem #333333;
 }
 .smooth {
   transition: all 1s;
-}
-.blockHeight {
-  height: 50vmin;
 }
 .bg-linear-gradient-orange {
   background: linear-gradient(to bottom right, #ffbb33 0, #ff2233 100%);
@@ -134,5 +131,27 @@ button {
 }
 .bg-linear-gradient-purple {
   background: linear-gradient(to bottom right, #bb77ff 0, #6644ff 100%);
+}
+@font-face {
+  font-family: "Noto Sans CJK TC";
+  src: url("./assets/font/NotoSansCJKtc-Regular.otf") format("opentype");
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #app{font-size: 1rem;}
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #app{font-size: 1.25rem;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+    #app{font-size: 1.25rem;}
+} */
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #app{font-size: 1.5rem;}
 }
 </style>
